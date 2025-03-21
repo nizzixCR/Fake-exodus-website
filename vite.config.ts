@@ -1,8 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
+// Détecter si l'environnement est GitHub Pages
+const isGitHubPages = process.env.GITHUB_ACTIONS === 'true';
+
 export default defineConfig({
   plugins: [react()],
-  base: "/Fake-exodus-website/", // IMPORTANT pour GitHub Pages
+  base: isGitHubPages ? '/Fake-exodus-website/' : '/', // Utilise la base appropriée en fonction de l'environnement
 })
