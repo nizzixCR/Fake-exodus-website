@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #1a1b24;
+  color: #ffffff;
+  font-family: var(--font-primary);
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.rainbow-ring {
+  background: linear-gradient(90deg,
+    #ff5c5c 0%,
+    #ffba49 15%,
+    #e8d71e 30%,
+    #16c172 45%,
+    #3dd598 60%,
+    #4e7cff 75%,
+    #9c6bff 90%,
+    #ff5c5c 100%
+  );
+  background-size: 200% 200%;
+}
+
+.crypto-chart-gradient {
+  background: conic-gradient(
+    #ff5c5c 0deg 30deg,
+    #ffba49 30deg 60deg,
+    #e8d71e 60deg 90deg,
+    #16c172 90deg 120deg,
+    #3dd598 120deg 150deg,
+    #4e7cff 150deg 180deg,
+    #38c6db 180deg 210deg,
+    #574ae2 210deg 240deg,
+    #9c6bff 240deg 270deg,
+    #b66dff 270deg 300deg,
+    #ff6b91 300deg 330deg,
+    #ff5c5c 330deg 360deg
+  );
+}
